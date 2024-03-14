@@ -34,13 +34,14 @@ module.exports = () => {
         name: 'Text Editor',
         short_name: 'Text',
         description: 'Edit your text!',
+        crossorigin: '',
         start_url: './',
         publicPath: './',
         icons: [
           {
-            src: path.resolve('src/images/logo.png'),
+            src: path.resolve('../client/src/images/logo.png'),
             sizes: [96, 128, 192, 256],
-            destination: path.join('assets', 'icon'),
+            destination: path.join('assets', 'icons'),
           },
         ],
       }),
